@@ -1,4 +1,4 @@
-﻿; Created by Asger Juul Brunshøj
+; Created by Asger Juul Brunshøj
 
 ; Note: Save with encoding UTF-8 with BOM if possible.
 ; I had issues with special characters like in ¯\_(ツ)_/¯ that wouldn't work otherwise.
@@ -69,7 +69,54 @@ else if Pedersen = kor ; Translate English to Korean
     gui_search("https://translate.google.com/#en/ko/REPLACEME")
 }
 
-
+;-------------------------------------------------------------------------------
+;;; MY STUFF ;;;
+;-------------------------------------------------------------------------------
+else if Pedersen = vc ; Visual Studio Code
+{
+    gui_destroy()
+    run "C:\Users\abdmoh\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk"
+}
+else if Pedersen = vs ; Visual Studio 2019
+{
+    gui_destroy()
+    run "D:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.exe"
+}
+else if Pedersen = one ; OneNote10
+{
+    gui_destroy()
+    run "D:\OneDrive - Assa Abloy Inc\Desktop\OneNote for Windows 10.lnk"
+}
+else if Pedersen = dg ; DataGrip
+{
+    gui_destroy()
+    run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\JetBrains\DataGrip 2020.1.lnk"
+}
+else if Pedersen = stu ; Studio 3T
+{
+    gui_destroy()
+    run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Studio 3T\Studio 3T.lnk"
+}
+else if Pedersen = per ; PersoIDE
+{
+    gui_destroy()
+    run "D:\Hg\dev\hid-dev-perso\Production Tools\PersoIDE\PersoIDE\bin\Debug_PLUS\PersoIDE.exe"
+}
+else if Pedersen = spe ; SpeedCrunch
+{
+    gui_destroy()
+    run "C:\Program Files (x86)\SpeedCrunch\speedcrunch.exe"
+}
+else if Pedersen = mer ; Sublime Merge
+{
+    gui_destroy()
+    run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Sublime Merge.lnk"
+}
+else if Pedersen = ara ; Araxis Merge
+{
+    gui_destroy()
+    run "C:\Users\abdmoh\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Araxis Merge.lnk"
+}
 ;-------------------------------------------------------------------------------
 ;;; LAUNCH WEBSITES AND PROGRAMS ;;;
 ;-------------------------------------------------------------------------------
